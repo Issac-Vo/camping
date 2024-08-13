@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* HEADER */
+.header {
+    background-color: #F8E1DB;
+    padding: 5px 70px;
+
+}
+.header .header__logo{
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.header .header__nav{
+    display: flex;
+
+}
+/* khoảng cách các iterm */
+.header .header__nav p {
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* hoặc sài gap */
+/* GALLERY */
+.gallery {
+    height: 600px;
+    background-image: url(./img/BG.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* carousell */
+.carousell{
+    padding: 100px 0;
+    background-color: #FAF4F2;
+}
+.carousell .carousell__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 20px; */
+}
+.carousell__title img {
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+}
+.carousell__title p{
+    color: #a3a2a2;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px; 
+}
+.carousell__body {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 30px 0;
+}
+.carousell__body .carousell__iterm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+}
+.carousell__iterm .iterm-image {
+    width: 200px;
+    height: 150px;
+    /* border: 1px solid red; */
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.iterm-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.iterm-image .icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #e76f51;
+    background-color: rgba(245, 243, 239, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+.carousell__iterm button {
+    padding: 10px 40px;
+    background-color: #E8E8E8;
+    border: none;
+    border-radius: 20px;
+    color: #a3a2a2;
+    cursor: pointer;
+}
+.carousell__footer button {
+    /* text-align: center; */
+    border: 2px solid orangered;
+    color: orangered;
+    background-color: #FAF4F2;
+    cursor: pointer;
+    padding: 10px 40px;
+    font-weight: 600;
+    border-radius: 20px;
+    /* align-items: center;  */
+    margin: 0 auto; 
+    display: block;
+    width: max-content; 
+}
+/* SIT */
+.sit {
+    background-image: url(./img/mask.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #F8E1DB;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .sit .sit__left {
+    /* margin: 20px; */
+    padding: 20px;
+    width: 50%;
+}
+.sit .sit__right {
+    width: 50%;
+    color: #424141;
+    /* display: flex; */
+}
+.right__decs {
+    margin: 20px 0;
+}
+.sit__right .social i {
+    color: #e76f51;
+    /* font-weight: 600; */
+    font-size: 30px;
+}
+.sit__right .right__title
+{
+    font-weight: 600;
+    font-size: 30px;
+}
+.sit__right .right__footer{
+    display: flex;
+    gap: 20px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 100px 50px 50px 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: #F8E1DB;
+    margin-top: 100px;
+}
+.fbody {
+    display: flex;
+    justify-content: space-between;
+}
+.fbody .fleft {
+    width: 40%;
+}
+.fbody .fright {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .fleft h4,
+.footer .riterm h4 {
+    margin-bottom: 20px;
+}
+.fdecs {
+    text-align: center;
+    margin-top: 20px;
+}
